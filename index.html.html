@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sprachspaß</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#f6ecff" />
+  <style>
+    :root{
+      --bg1:#f8efff;
+      --bg2:#fff8ec;
+      --card:#ffffff;
+      --text:#4b3b63;
+      --muted:#76678f;
+      --accent:#a27be7;
+      --accent2:#ffd86e;
+      --accent3:#8ed7ff;
+      --border:#eadcf7;
+      --shadow:0 10px 30px rgba(110,87,150,.12);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,var(--bg1),var(--bg2));min-height:100%}
+    body{padding:18px}
+    .app{max-width:860px;margin:0 auto}
+    .hero{background:rgba(255,255,255,.75);backdrop-filter: blur(6px); border:2px solid var(--border); border-radius:28px; padding:24px 20px; box-shadow:var(--shadow); text-align:center;}
+    h1{margin:0;font-size:2.2rem;line-height:1.1}
+    .subtitle{margin:10px 0 0;color:var(--muted);font-size:1.05rem;line-height:1.5}
+    .bubble-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .bubble{width:18px;height:18px;border-radius:999px}
+    .b1{background:#ef5d67}.b2{background:#ffd34f}.b3{background:#5daef0}.b4{background:#72c98b}.b5{background:#b08ae8}
+    .section-title{font-size:1.15rem;font-weight:800;margin:22px 4px 12px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    .card{background:var(--card);border:2px solid var(--border);border-radius:24px;padding:18px;box-shadow:var(--shadow)}
+    .card-top{display:flex;align-items:center;gap:14px}
+    .icon{width:66px;height:66px;border-radius:20px;display:grid;place-items:center;font-size:30px;flex:0 0 auto;background:linear-gradient(135deg,#fff4f5,#fff9e8);border:2px solid #f6e2e6}
+    .icon.future{background:linear-gradient(135deg,#f8f4ff,#eef8ff);border-color:#e5ddf6}
+    .title{font-size:1.25rem;font-weight:800;margin:0 0 5px}
+    .desc{margin:0;color:var(--muted);line-height:1.45}
+    .tag{display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:#f6f0ff;color:#6c55a0;font-size:.87rem;font-weight:700}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{appearance:none;border:none;border-radius:16px;padding:14px 18px;font-size:1rem;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-secondary{background:#efe8fb;color:#5f4894}
+    .btn-disabled{background:#f2eef8;color:#a395bf;cursor:default}
+    .mini-list{margin:8px 0 0 0;padding-left:18px;color:var(--muted);line-height:1.5}
+    .footer{margin:20px 2px 4px;color:var(--muted);font-size:.95rem;line-height:1.5;text-align:center}
+    @media (min-width:720px){
+      .grid{grid-template-columns:1fr}
+      .hero{padding:28px 28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <section class="hero">
+      <h1>Sprachspaß</h1>
+      <p class="subtitle">Deine kleine Sprachförder-App mit Spielen zum Entdecken, Sprechen und Mitmachen.</p>
+      <div class="bubble-row" aria-hidden="true">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+        <div class="bubble b5"></div>
+      </div>
+    </section>
+
+    <div class="section-title">Deine Spiele</div>
+    <section class="grid">
+      <article class="card">
+        <div class="card-top">
+          <div class="icon">🎨</div>
+          <div>
+            <div class="title">Farbzauber</div>
+            <p class="desc">Farben entdecken, tippen, wischen und mischen.</p>
+            <div class="tag">Spiel 1</div>
+          </div>
+        </div>
+        <ul class="mini-list">
+          <li>Grundfarben kennenlernen</li>
+          <li>Farben mischen</li>
+          <li>Punkte und Spuren entdecken</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://kietzmannmadlen-cloud.github.io/farbzauber/">Spiel starten</a>
+        </div>
+      </article>
+
+    </section>
+
+    <p class="footer">Weitere Sprachspiele können später ergänzt werden.</p>
+  </div>
+</body>
+</html>
